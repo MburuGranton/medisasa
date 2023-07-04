@@ -1,0 +1,58 @@
+body {
+    /* background: #616161; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #9bc5c3, #616161); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #9bc5c3, #616161); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-container {
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#container {
+    margin: 50px auto;
+}
+
+.custom-input {
+    /* width: 50%; */
+    margin: 0 auto;
+    /* Centers the input field */
+}
+
+.custom-btn {
+    padding: 5px 20px;
+    margin: 0 auto;
+}
+
+.hero {
+    color: green;
+    margin-top: 30px;
+    text-align: center;
+    /* font: 300px; */
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.header {
+    /* text-align: center; */
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"] {
+    color: #000000;
+}
