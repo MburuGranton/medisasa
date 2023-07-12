@@ -5,12 +5,322 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script> -->
+
+    <style>
+        .navbar {
+            background-color: #007bff;
+            /* Ocean Blue */
+        }
+        
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+        }
+        
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
+        
+        .login-button {
+            background-color: #05366a;
+            color: #fff;
+        }
+        
+        .signup-button {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        
+        .hero-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        .hero-text {
+            font-size: 60px;
+        }
+        
+        .hero-text-paragraph {
+            font-size: 16px;
+        }
+        
+        .highlight {
+            color: #007bff;
+        }
+        
+        .hero-image {
+            max-width: 400px;
+            height: auto;
+        }
+        
+        .service-title {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .service-paragraph {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .information-section {
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .service-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .info-title {
+            color: #007bff;
+        }
+        
+        .testimonial-card {
+            text-align: center;
+            padding: 30px;
+        }
+        
+        .testimonial-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        
+        .testimonial-name {
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .testimonial-residence {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial-remarks {
+            font-style: italic;
+            color: #555;
+        }
+        
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: #007bff;
+            /* Blue color */
+            background-color: transparent;
+            /* Remove default background color */
+            border: none;
+            /* Remove default border */
+            outline: none;
+            /* Remove outline when active */
+        }
+        
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            color: #0056b3;
+            /* Darker shade of blue on hover */
+        }
+        /* .carousel-control-prev,
+        .carousel-control-next {
+            color: #007bff;
+        } */
+        
+        @media (max-width: 576px) {
+            .hero-text {
+                font-size: 24px;
+            }
+            .hero-text-paragraph {
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MediSASA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn login-button">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn signup-button">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-    <h1>Welcome to the latest technology in the world of medicine</h1>
+
+    <div class="container mt-3">
+        <div class="row hero-section">
+            <div class="col-md-6">
+                <h1 class="hero-text">
+                    Welcome to the
+                    <span class="highlight">latest</span> technology in <span class="highlight ">Medicine.</span>
+                </h1>
+                <p class="hero-text-paragraph">
+                    Our web app simplifies your healthcare experience by sending mobile SMS notifications for doctor appointments and medical prescriptions. With our convenient service, you'll receive timely reminders for your upcoming appointments, ensuring you never miss
+                    an important visit. Additionally, we securely deliver your medical prescriptions directly to your mobile device, saving you time and effort. Experience hassle-free healthcare management with our SMS-based solution.
+                </p>
+            </div>
+            <div class="col-md-6 ">
+                <img src="https://img.freepik.com/free-photo/fun-3d-illustration-cartoon-teenage-girl_183364-80046.jpg?w=740&t=st=1689157258~exp=1689157858~hmac=05994533e2dd3cf8fc56476b818cf684f27989f759f6a0bed36091e98c0f5393 " alt="Hero Image
+                        " class="hero-image ">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row information-section">
+            <div class="col-12 mb-3">
+                <h2 class="text-center info-title">What We Do</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/3d-cartoon-doctor-character-face-mask_1048-12965.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais" alt="Doctor Appointment" class="img-fluid">
+                    <h3 class="service-title">Doctor Appointment SMS Notification</h3>
+                    <p class="service-paragraph">
+                        Never miss a doctor's appointment again! Our web app sends SMS notifications to remind you of your upcoming appointments, ensuring you stay on track with your healthcare schedule.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-psd/3d-female-nurse-illustration_1150-59012.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais" alt="Medicine Prescription" class="img-fluid">
+                    <h3 class="service-title">Medicine Prescription SMS Notification</h3>
+                    <p class="service-paragraph">
+                        Say goodbye to forgotten prescriptions. We deliver your medical prescriptions through SMS, providing a convenient and secure way to access your medications whenever you need them.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src=https://img.freepik.com/free-photo/doctor-with-stethoscope_1401-34.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="Health Check-Up " class="img-fluid ">
+                    <h3 class="service-title ">Health Check-Up Notification</h3>
+                    <p class="service-paragraph ">
+                        Take control of your health. Our web app sends you regular SMS notifications to remind you of upcoming health check-ups, helping you stay proactive in maintaining your well-being.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="testimonialCarousel " class="carousel slide " data-ride="carousel " data-interval="3000 ">
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+            <div class="container ">
+                <h2 class="text-center info-title ">Testimonials</h2>
+
+              <div class="row ">
+                <div class="col-md-6 offset-md-3 ">
+                  <div class="testimonial-card ">
+                    <img src="https://img.freepik.com/free-vector/young-black-girl-avatar_53876-115570.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="User 1 " class="testimonial-image ">
+                    <h4 class="testimonial-name ">Esther Wanjiru</h4>
+                    <p class="testimonial-residence ">Muranga, Kenya</p>
+                    <p class="testimonial-remarks ">"The service provided by this web app has greatly improved my healthcare experience. I am able to manage my appointments and prescriptions easily. Highly recommended! "</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row ">
+                <div class="col-md-6 offset-md-3 ">
+                  <div class="testimonial-card ">
+                    <img src="https://img.freepik.com/free-photo/fun-3d-illustration-american-referee_183364-81231.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="User 2 " class="testimonial-image ">
+                    <h4 class="testimonial-name ">Oloo Simba</h4>
+                    <p class="testimonial-residence ">Siaya, Kenya</p>
+                    <p class="testimonial-remarks ">"I 've been using this web app for managing my healthcare needs and it has been fantastic. It's convenient and user-friendly. I highly recommend it to everyone! "</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row ">
+                <div class="col-md-6 offset-md-3 ">
+                  <div class="testimonial-card ">
+                    <img src="https://img.freepik.com/free-psd/3d-illustration-person-with-glasses_23-2149436191.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="User 3 " class="testimonial-image ">
+                    <h4 class="testimonial-name ">Jane Ikira</h4>
+                    <p class="testimonial-residence ">Nairobi, Kenya</p>
+                    <p class="testimonial-remarks ">"This web app has revolutionized the way I manage my healthcare. It 's efficient, secure, and keeps me informed about my appointments and prescriptions. Highly recommended!"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <div class="testimonial-card">
+                    <img src="https://img.freepik.com/free-psd/3d-rendering-mike-working-computer_23-2149312576.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais" alt="User 4" class="testimonial-image">
+                    <h4 class="testimonial-name">Emily Wilson</h4>
+                    <p class="testimonial-residence">Machakos, Kenya</p>
+                    <p class="testimonial-remarks">"I'm extremely satisfied with this web app. It has made managing my healthcare needs a breeze. The SMS notifications have been a game-changer for me. Thank you! "</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev " href="#testimonialCarousel " role="button " data-slide="prev ">
+          <span class="carousel-control-prev-icon " aria-hidden="true "></span>
+          <span class="sr-only ">Previous</span>
+        </a>
+        <a class="carousel-control-next " href="#testimonialCarousel " role="button " data-slide="next ">
+          <span class="carousel-control-next-icon " aria-hidden="true "></span>
+          <span class="sr-only ">Next</span>
+        </a>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+
 
 </body>
 
