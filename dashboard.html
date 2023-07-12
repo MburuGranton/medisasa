@@ -142,6 +142,92 @@
             color: #007bff;
         } */
         
+        .company-logos {
+            padding: 50px 0;
+        }
+        
+        .company-logos-container {
+            height: 200px;
+            /* Set a fixed height for the container */
+            overflow-x: auto;
+            /* Enable horizontal scrolling */
+        }
+        
+        .company-logo {
+            max-width: 150px;
+            height: auto;
+            margin: 20px;
+            border-radius: 50%;
+        }
+        
+        .company-logos img {
+            max-width: 150px;
+            height: auto;
+            margin: 20px;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+        }
+        
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding-left: 30px;
+        }
+        
+        .faq-answer.show {
+            display: block;
+        }
+        
+        .faq-question::after {
+            content: "\25BC";
+            float: right;
+            transition: all 0.3s;
+        }
+        
+        .faq-question.collapsed::after {
+            transform: rotate(-90deg);
+        }
+        
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-right: 1px solid #000;
+        }
+        
+        .footer-section:first-child {
+            border-left: 1px solid #000;
+        }
+        
+        .footer-section a {
+            color: #000;
+        }
+        
+        .footer-section hr {
+            margin: 10px 0;
+            width: 100%;
+        }
+        
+        .footer {
+            background-color: #0e6ba8;
+            color: #000;
+        }
+        
+        .footer-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
         @media (max-width: 576px) {
             .hero-text {
                 font-size: 24px;
@@ -172,9 +258,9 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn login-button">Login</button>
+                        <button class="btn login-button ">Login</button>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item ml-2">
                         <button class="btn signup-button">Sign Up</button>
                     </li>
                 </ul>
@@ -315,12 +401,122 @@
           <span class="sr-only ">Next</span>
         </a>
       </div>
-    
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 
 
+      
+
+      
+
+      <section class="company-logos ">
+        <div class="container ">
+          <h2 class="text-center info-title ">Partners</h2>
+          <div class="row justify-content-center ">
+            <div class="col-6 col-md-4 col-lg-3 ">
+                <img src="https://img.freepik.com/free-psd/discord-logo-3d-social-media-icon-isolated_47987-11939.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="Company 3 " class="company-logo ">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 ">
+                <img src="https://img.freepik.com/free-psd/google-icon-isolated-3d-render-illustration_47987-9777.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="Company 1 " class="company-logo " >
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 ">
+                <img src="https://img.freepik.com/free-psd/3d-icon-social-media-app_23-2150049571.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="Company 2 " class="company-logo ">
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 ">
+                <img src="data:image/png;base64,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" alt="
+                        Company 2 " class="company-logo ">
+            </div>
+            <!-- Add more company logos as needed -->
+          </div>
+        </div>
+      </section>
+
+
+
+      <div class="container ">
+        <h2 class="text-center info-title mt-4 mb-4 ">Frequently Asked Questions</h2>
+        <div class="faq-item ">
+          <h5 class="faq-question " onclick="toggleAnswer( this) ">1.How can I schedule a doctor's appointment using the web app?</h5>
+          <p class="faq-answer " id="answer1 ">To schedule a doctor's appointment, log in to the web app and navigate to the "Appointments " section. Click on the "Schedule Appointment " button, enter the required details such as date, time, and doctor's name, and submit the form. You will receive an SMS confirmation with the appointment details.</p>
+        </div>
+        <div class="faq-item ">
+          <h5 class="faq-question " onclick="toggleAnswer( this) ">2.How do I receive SMS notifications for my medicine prescriptions?</h5>
+          <p class="faq-answer " id="answer2 ">When a doctor prescribes medication, your registered phone number will automatically receive an SMS notification with the prescription details. Make sure to keep your contact information up to date in your account settings to ensure you receive the SMS notifications.</p>
+        </div>
+        <div class="faq-item ">
+          <h5 class="faq-question " onclick="toggleAnswer( this) ">3.Can I reschedule or cancel an appointment through SMS?</h5>
+          <p class="faq-answer " id="answer3
+                        ">Yes, you can reschedule or cancel an appointment using SMS. Simply reply to the appointment confirmation SMS with your request. If you wish to reschedule, provide the new preferred date and time. If you want to cancel, reply with the word "CANCEL ". The web app will process your request and send you a confirmation SMS.</p>
+        </div>
+        <div class="faq-item ">
+          <h5 class="faq-question " onclick="toggleAnswer( this) ">4. How do I receive reminders for upcoming checkup appointments?</h5>
+          <p class="faq-answer " id="answer4 "> The web app sends automated SMS reminders for your checkup appointments. You will receive a reminder SMS a day before the scheduled checkup. This helps you stay updated and ensure you don't miss any important
+                        healthcare appointments.</p>
+                </div>
+                <div class="faq-item ">
+                    <h5 class="faq-question " onclick="toggleAnswer(this) ">5.Are my personal and medical information secure when using the web app's SMS notifications?</h5>
+                    <p class="faq-answer " id="answer5 ">Yes, the web app takes the security and privacy of your personal and medical information seriously. All data is securely stored and transmitted using encryption protocols. Only authorized healthcare providers and relevant staff have
+                        access to your information. The web app adheres to strict privacy regulations to ensure the confidentiality and protection of your data.</p>
+                </div>
+            </div>
+            <h2 class="text-center info-title mt-4 mb-4 ">Links</h2>
+
+
+            <footer>
+
+                <div class="container ">
+
+                  <div class="row ">
+                    <div class="col-md-3 footer-section ">
+                      <h5>Resources</h5>
+                      <a href="# ">Support</a>
+                      <a href="# ">Developers</a>
+                      <a href="# ">Github</a>
+                      <a href="# ">Status</a>
+                    </div>
+                    <div class="col-md-3 footer-section ">
+                      <h5>Company</h5>
+                      <a href="# ">Our Story</a>
+                      <a href="# ">Contact Us</a>
+                      <a href="# ">Careers</a>
+                    </div>
+                    <div class="col-md-3 footer-section ">
+                      <h5>Legal</h5>
+                      <a href="# ">Terms of Service</a>
+                      <a href="# ">Privacy Policy</a>
+                      <a href="# ">Service Level Agreement</a>
+                      <a href="# ">Code of Conduct</a>
+                      <a href="# ">Marketplace</a>
+                      <a href="# ">Terms of Service</a>
+                    </div>
+                    <div class="col-md-3 footer-section ">
+                      <h5>Find Us</h5>
+                      <a href="# ">Facebook</a>
+                      <a href="# ">Twitter</a>
+                      <a href="# ">YouTube</a>
+                      <a href="# ">Slack</a>
+                    </div>
+                  </div>
+                  <hr>
+      <div class="footer-line ">
+        <p class=" info-title ">MediSASA.All Rights Reserved</p>
+      </div>
+                </div>
+                
+              </footer>
+            
+
+
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+            <script>
+                
+                function toggleAnswer(questionElement) {
+    const answerElement = questionElement.nextElementSibling;
+    answerElement.classList.toggle('show');
+  }
+            </script>
 
 </body>
 
