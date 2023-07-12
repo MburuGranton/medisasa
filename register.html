@@ -19,7 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- <s src="https://accounts.google.com/gsi/client" async defer></s/cript> -->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- <script src="https://apis.google.com/js/platform.js" async defer></script> -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
 
 </head>
 
@@ -87,7 +88,10 @@
             <div class="row">
                 <div class="col-md-4 offset-md-4">
                     <div class="d-flex justify-content-center">
-                        <div class="g-signin2" data-onsuccess="onSignIn">Google Sign In</div>
+                        <div id="g_id_onload" data-client_id="325558442636-pcr8u8ecef4bhphgq8k5ut5ip01sp7jp.apps.googleusercontent.comgit " data-login_uri="https://your.domain/your_login_endpoint" data-auto_prompt="false">
+                        </div>
+                        <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline" data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                        </div>
                         <button type="button" class="btn btn-primary btn-block ml-2 mt-3" id="twitterSignInButton">
                   <i class="fab fa-twitter mr-2"></i>Register with Twitter
                 </button>
