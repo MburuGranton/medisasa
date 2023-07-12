@@ -50,7 +50,7 @@ function handleSignInClick() {
 }
 
 // Add event listener to the button
-document.getElementById('signInButton').addEventListener('click', handleSignInClick);
+// document.getElementById('signInButton').addEventListener('click', handleSignInClick);
 
 
 
