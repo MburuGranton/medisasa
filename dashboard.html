@@ -8,9 +8,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 
     <style>
         .navbar {
@@ -262,7 +262,7 @@
                         <button class="btn login-button ">Login</button>
                     </li>
                     <li class="nav-item ml-2">
-                        <button class="btn signup-button">Sign Up</button>
+                        <button class="btn signup-button"><a href="register.html">Sign Up</a></button>
                     </li>
                 </ul>
             </div>
@@ -331,12 +331,12 @@
 
 
 
+    <h2 class="text-center info-title ">Testimonials</h2>
 
     <div id="testimonialCarousel " class="carousel slide " data-ride="carousel " data-interval="3000 ">
         <div class="carousel-inner ">
           <div class="carousel-item active ">
-            <div class="container ">
-                <h2 class="text-center info-title ">Testimonials</h2>
+        
 
               <div class="row ">
                 <div class="col-md-6 offset-md-3 ">
@@ -348,10 +348,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
           <div class="carousel-item ">
-            <div class="container ">
+          
               <div class="row ">
                 <div class="col-md-6 offset-md-3 ">
                   <div class="testimonial-card ">
@@ -362,10 +362,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
           <div class="carousel-item ">
-            <div class="container ">
+            
               <div class="row ">
                 <div class="col-md-6 offset-md-3 ">
                   <div class="testimonial-card ">
@@ -376,10 +376,10 @@
                   </div>
                 </div>
               </div>
-            </div>
+            
           </div>
           <div class="carousel-item">
-            <div class="container">
+            
               <div class="row">
                 <div class="col-md-6 offset-md-3">
                   <div class="testimonial-card">
@@ -390,7 +390,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+           
           </div>
         </div>
         <a class="carousel-control-prev " href="#testimonialCarousel " role="button " data-slide="prev ">
@@ -407,7 +407,7 @@
       
 
       <div class="container ">
-        <h2 class="text-center mt-4 ">Partners</h2>
+        <h2 class="text-center mt-4 info-title ">Partners</h2>
         <div class="row ">
           <div class="col-md-3 col-sm-6 text-center ">
             <img src="https://img.freepik.com/free-psd/discord-logo-3d-social-media-icon-isolated_47987-11939.jpg?size=626&ext=jpg&uid=R84573445&ga=GA1.2.2032640717.1685618867&semt=ais " alt="Company 1 " class="company-logo ">
@@ -509,6 +509,10 @@
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
 
             <script>
+
+         $(document).ready(function() {
+    $('#testimonialCarousel').carousel();
+  });
                 
                 function toggleAnswer(questionElement) {
     const answerElement = questionElement.nextElementSibling;
